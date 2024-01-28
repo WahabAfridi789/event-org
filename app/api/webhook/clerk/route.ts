@@ -79,6 +79,7 @@ export async function POST(req: Request) {
           userId: newUser._id,
         },
       });
+      console.log("User created successfully");
       return NextResponse.json({
         message: "OK",
         user: newUser,
